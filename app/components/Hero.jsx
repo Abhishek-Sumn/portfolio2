@@ -26,22 +26,40 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 20px;
+font-size: large;
 
 `
 const Right = styled.div`
 flex: 3;
+position: relative;
 `
-const Line = styled.div`
-
+const Line = styled.img`
+height: 5px;
 `
 const Subtitle = styled.div`
-
+font-size: 25px;
+font-weight: 700;
+color: #9beb89c7;
 `
 const Desc = styled.div`
 
 `
 const Img = styled.img`
+width: 800px;
+height: 600px;
+object-fit: contain;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+animation: animate 2s infinite ease alternate;
 
+@keyframes animate{
+  100%{
+    transform:translateY(20px)
+  }
+}
 `
 const Button = styled.div`
 
@@ -69,12 +87,8 @@ export const Hero = () => {
 
           <WhatWeDo>
 
-            <Image
-              src="./img/p.png"
-              alt="Landscape picture"
-              width={800}
-              height={500}
-            />
+            <Line src="./img/Line.png" />
+
             <Subtitle>Frontend Web Dev.</Subtitle>
           </WhatWeDo>
 

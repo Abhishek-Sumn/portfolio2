@@ -14,7 +14,7 @@ align-items:center;
 `
 const Links = styled.div`
 display:flex;
-gap:50px
+gap:50px;
 align-items:center;
 `
 
@@ -49,11 +49,12 @@ const Button = styled.button`
 width:100px;
 padding:15px;
 background-color:#0f5d77;
-color: white;
+
 border:none;
 border-radius:5px;
 cursor:pointer;
 font-size:15px;
+
 `
 
 
