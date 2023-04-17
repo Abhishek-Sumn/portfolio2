@@ -6,7 +6,9 @@ display:flex;
 justify-content:center;
 `
 const Container = styled.div`
-width: 1400px;
+margin: 0;
+padding: 0;
+width: 100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -20,11 +22,12 @@ align-items:center;
 
 const Logo = styled.img`
 margin-top:15px;
+margin-right :50vh ;
 width:150px;
 
 `
 const List = styled.ul`
-margin-left:55vh;
+margin-right:50vh;
 display:flex;
 align-items:center;
 gap:20px;
@@ -48,7 +51,7 @@ cursor:pointer;
 const Button = styled.button`
 width:100px;
 padding:15px;
-background-color:#0f5d77;
+background-color:#C1FF72;
 
 border:none;
 border-radius:5px;
@@ -65,11 +68,11 @@ function Navbar() {
             <Container>
 
                 <Links>
-                    <Logo src="./img/logo.png"></Logo>
+                    <Logo src="./img/logg.png"></Logo>
                     <List>
                         <ListItem>Home</ListItem>
                         <ListItem>Studio</ListItem>
-                        <ListItem>Works</ListItem>
+                        <ListItem href="#Works">Works</ListItem>
                         <ListItem>Contact</ListItem>
                     </List>
                 </Links>
@@ -77,7 +80,7 @@ function Navbar() {
                 <Icons>
 
                     <Icon src="./img/search.png" />
-                    <Button > Hire Now </Button>
+                    <Button >Hire Now</Button>
 
                 </Icons>
             </Container>
