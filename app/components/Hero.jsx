@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Navbar from './Navbar'
-import Image from 'next/image'
 import { OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import Model from "./Model"
