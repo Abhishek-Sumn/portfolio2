@@ -93,7 +93,7 @@ font-size:15px; */
   width: 4em;
   height: 100%;
   top: 0;
-  transition: transform .4s ease-in-out;
+  transition: transform .6s ease-in-out;
   background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
   }
   &:hover{
@@ -138,7 +138,7 @@ function Navbar({ boy }) {
         <Icons>
 
 
-          <Button >Hire Now</Button>
+          <Button>Hire</Button>
 
         </Icons>
       </Container>

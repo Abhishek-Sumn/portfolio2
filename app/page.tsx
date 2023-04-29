@@ -21,7 +21,7 @@ scrollbar-width: none;
   display:none;
 } */
 color:white;
-background:url("./img/bg12.jpg");
+background:url("./img/bg1.jpg");
 
 
 

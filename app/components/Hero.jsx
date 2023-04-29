@@ -130,6 +130,13 @@ export const Hero = () => {
 
           <Desc>
             I enjoy creating visually appealing and interactive web interfaces that enhance user experiences
+            <br />
+            <br />
+
+        
+            <b>
+            I am currently Looking for Internship
+            </b>
           </Desc>
 
           <Buttoncontainer>
