@@ -5,6 +5,10 @@ import Who from "./components/Who";
 import Works from "./components/Works";
 import styled from "styled-components";
 
+import { useRef } from "react";
+import Navbar from './components/Navbar'
+import "./page.module.css"
+
 const Container = styled.div`
 height:100vh;
 scroll-snap-type: y mandatory;
@@ -15,18 +19,28 @@ scrollbar-width: none;
   display:none;
 } */
 color:white;
-background:url("./img/bg.jpeg");
+background:url("./img/bg12.jpg");
+
+
+
 `
+
 export default function Home() {
+  const worksRef = useRef(null);
+  const studioRef = useRef(null);
+  const contactRef = useRef(null);
+
+
   return (
+
     <Container>
 
+      <Navbar boy={worksRef} />
       <Hero />
       <Who />
-      <Works />
+      <Works ref={worksRef} />
       <Contact />
-     
-      
+
     </Container>
   )
 }

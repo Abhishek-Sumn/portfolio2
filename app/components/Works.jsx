@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Html from "./Html";
 import Reactt from "./Reactt";
 import Next from "./Next";
-
+import Link from 'next/link';
+import { forwardRef } from 'react';
 
 const data = [
   "HTML",
@@ -71,41 +72,44 @@ position: relative;
 }
 `
 const Right = styled.div`
-background-color: aqua;
+
 flex: 1;
 `
-
-export const Works = () => {
+// eslint-disable-next-line react/display-name
+export const Works = forwardRef((props,ref) => {
 
   const [work, setWork] = useState("HTML")
   return (
-    <Section>
-      <Container  id="Works">
-        <Left>
-          <List>
-            {data.map((item) => (
-              <ListItem key={item} text={item} onClick={()=>setWork(item)}>
-                {item}
+    <div ref={ref}>
+
+      <Section id='Works' >
+        <Container >
+          <Left>
+            <List>
+              {data.map((item) => (
+                <ListItem key={item} text={item} onClick={() => setWork(item)}>
+                  {item}
                 </ListItem>
-            ))}
-          </List>
-        </Left>
-        <Right>
- 
-          {work === "React-js" ? (
-            <Reactt />
-          ) : work === "Next-js" ? (
-            <Next />
-          ) : (
-            <Html />
-          )}
+              ))}
+            </List>
+          </Left>
+          <Right>
 
-        </Right>
+           {/*  {work === "React-js" ? (
+              <Reactt />
+            ) : work === "Next-js" ? (
+              <Next />
+            ) : (
+              <Html />
+            )} */}
 
-      </Container>
-    </Section>
+          </Right>
+
+        </Container>
+      </Section>
+    </div>
   )
 
-}
+});
 
 export default Works;

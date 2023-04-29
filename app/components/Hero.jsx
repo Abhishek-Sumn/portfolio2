@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import { OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import Model from "./Model"
-
+import Image from 'next/image'
 const Section = styled.div`
 height:100vh;
 display:flex;
@@ -15,7 +15,7 @@ justify-content:space-between;
 `
 
 const Container = styled.div`
-padding-top: 10vh;
+/* padding-top: 10vh; */
 margin-left:  20px;
 height:100vh;
 width:1400px;
@@ -65,10 +65,13 @@ animation: animate 2s infinite ease alternate;
   }
 }
 `
+const Buttoncontainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vh;
+`
 const Button = styled.div`
-width:100px;
-padding:15px;
-background-color:#0f5d77;
+width:50px;
 
 border:none;
 border-radius:5px;
@@ -110,7 +113,7 @@ export const Hero = () => {
   return (
     <Section>
 
-      <Navbar />
+      {/*  <Navbar /> */}
 
       <Container>
 
@@ -129,7 +132,22 @@ export const Hero = () => {
             I enjoy creating visually appealing and interactive web interfaces that enhance user experiences
           </Desc>
 
-          
+          <Buttoncontainer>
+
+            <a href="https://www.linkedin.com/in/abhishek-suman-0021411b7/" target='_blank'>
+              <Button >
+                <Image src="/img/ld.png" alt='Linkidin' width="50" height="50"></Image>
+              </Button>
+            </a>
+
+            <a href="https://github.com/Abhishek-Sumn" target='_blank'>
+              <Button>
+                <Image src="/img/git.png" alt='Linkidin' width="50" height="50"></Image>
+              </Button>
+            </a>
+
+          </Buttoncontainer>
+
 
         </Left>
 

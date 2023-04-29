@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import Cube from "./Cube"
+import { forwardRef } from 'react';
 
 const Section = styled.div`
 height:100vh;
@@ -55,51 +56,51 @@ display: flex;
 align-items: center;
 gap: 10px;
 `
-
+// eslint-disable-next-line react/display-name
 export const Who = () => {
   return (
-    <Section>
+
+    <div id ="who">
+
+      <Section>
+        <Container>
+          <Left>
+
+            <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
+              <OrbitControls enableZoom={false} autoRotate />
+              <ambientLight intensity={1} />
+              <directionalLight position={[3, 2, 1]} />
+
+              <Cube />
 
 
+            </Canvas>
 
-      <Container>
+          </Left>
 
-        <Left>
+          <Right>
+            <Title>Think outside the square space</Title>
 
-          <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
-            <OrbitControls enableZoom={false} autoRotate/>
-            <ambientLight intensity={1} />
-            <directionalLight position={[3, 2, 1]} />
+            <WhatWeDo>
 
-            <Cube />
+              <Line src="./img/Line.png" />
 
+              <Subtitle>who we are.</Subtitle>
+            </WhatWeDo>
 
-          </Canvas>
+            <Desc>
+              We enjoy creating delightful,human centered
+              digital experiences
+            </Desc>
 
-        </Left>
+            <Button>see our works</Button>
+          </Right>
 
-        <Right>
-          <Title>Think outside the square space</Title>
+        </Container>
 
-          <WhatWeDo>
+      </Section>
 
-            <Line src="./img/Line.png" />
-
-            <Subtitle>who we are.</Subtitle>
-          </WhatWeDo>
-
-          <Desc>
-            We enjoy creating delightful,human centered
-            digital experiences
-          </Desc>
-
-          <Button>see our works</Button>
-        </Right>
-
-      </Container>
-
-    </Section>
-
+    </div>
 
 
 

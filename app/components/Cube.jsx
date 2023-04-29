@@ -21,7 +21,7 @@ export const Cube = () => {
 
                     <color attach="background" args={["#4b8ba7"]} />
                     <Text ref={textRef} fontSize={3} color="#0e3765">
-                        Hello
+                        Design
                     </Text>
 
                 </RenderTexture>
