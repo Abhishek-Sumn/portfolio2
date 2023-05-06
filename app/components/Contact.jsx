@@ -89,27 +89,30 @@ export const Contact = () => {
 
 
   return (
-    <Section>
-      <Container>
-        <Left>
-          <Form ref={ref}
-            onSubmit={handlesubmit}>
-            <Title>Contact</Title>
-            <Input placeholder='Name' name="name" />
-            <Input placeholder='Email' name="email" />
-            <Textarea placeholder='Write your message'
-              name='message' rows={10} />
-            <Button type='submit'>Send</Button>
-            {
-              success && "Message Sent Successfully I will revert back in few hours"
-            }
-          </Form>
-        </Left>
-        <Right>
-          <Map />
-        </Right>
-      </Container>
-    </Section>
+    <div id='sec3'>
+
+      <Section >
+        <Container>
+          <Left>
+            <Form ref={ref}
+              onSubmit={handlesubmit}>
+              <Title>Contact</Title>
+              <Input placeholder='Name' name="name" />
+              <Input placeholder='Email' name="email" />
+              <Textarea placeholder='Write your message'
+                name='message' rows={10} />
+              <Button type='submit'>Send</Button>
+              {
+                success && "Message Sent Successfully I will revert back in few hours"
+              }
+            </Form>
+          </Left>
+          <Right>
+            <Map />
+          </Right>
+        </Container>
+      </Section>
+    </div>
   )
 }
 

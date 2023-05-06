@@ -50,6 +50,13 @@ list-style:none;
 const ListItem = styled.li`
 cursor:pointer;
 font-size:20px;
+text-decoration: none !important;
+color: #ffffff;
+`
+const ListIt = styled.li`
+text-decoration: none;
+color: #ffffff;
+
 `
 const Icons = styled.div`
 display:flex;
@@ -116,29 +123,34 @@ function Navbar({ boy }) {
       <Container>
 
         <Links>
+
           <Logo src="./img/logg.png"></Logo>
           <List >
 
             <ListItem>Home</ListItem>
 
-            
-             
-            <ListItem>Studio</ListItem>
+            <a href="#who"> <ListItem>
+              Studio
+            </ListItem> </a>
 
             <ListItem
               onClick={() => boy.current.scrollIntoView({ behavior: "smooth" })}>
               Works
             </ListItem>
 
-            <ListItem  >Contact</ListItem>
+            <a href="#sec3"> <ListItem>
+              Contact
+            </ListItem> </a>
 
           </List>
+
         </Links>
 
         <Icons>
 
-
-          <Button>Hire</Button>
+          <a href="#sec3"> <Button>
+            Hire
+          </Button> </a>
 
         </Icons>
       </Container>

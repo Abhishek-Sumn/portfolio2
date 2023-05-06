@@ -5,6 +5,8 @@ import { OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import Model from "./Model"
 import Image from 'next/image'
+
+
 const Section = styled.div`
 height:100vh;
 display:flex;
@@ -13,9 +15,7 @@ flex-direction:column;
 scroll-snap-align:center;
 justify-content:space-between;
 `
-
 const Container = styled.div`
-/* padding-top: 10vh; */
 margin-left:  20px;
 height:100vh;
 width:1400px;
@@ -89,7 +89,6 @@ gap: 10px;
 const Right = styled.div`
 display: flex;
 flex: 3;
-/* background-color: aqua;  */
 flex-direction: column;
 gap: 20px;
 align-content: center;
@@ -103,17 +102,14 @@ gap: 20px;
 `
 const But = styled.div`
 display: flex;
-/* background-color: #9eb19e;  */
 justify-content: center;
 align-items: center;
 
-  
 `
+
 export const Hero = () => {
   return (
     <Section>
-
-      {/*  <Navbar /> */}
 
       <Container>
 
@@ -167,7 +163,7 @@ export const Hero = () => {
 
 
 
-          <Canvas camera={{ fov: 25, position: [5, 5, 5], }}>
+          <Canvas camera={{ fov: 25, position: [5, 5, 5], }} >
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
