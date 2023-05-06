@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Navbar from './Navbar'
-import { OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import Model from "./Model"
 import Image from 'next/image'
@@ -46,7 +45,7 @@ font-weight: 700;
 color: #C1FF72;
 `
 const Desc = styled.div`
-
+font-size: 20px;
 `
 const Img = styled.img`
 width: 800px;
@@ -95,7 +94,7 @@ align-content: center;
 justify-content: center;
 `
 const Up = styled.div`
- background-color: yellow; 
+ 
 `
 const Down = styled.div`
 gap: 20px;
