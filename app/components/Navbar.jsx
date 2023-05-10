@@ -4,10 +4,7 @@ import Link from 'next/link';
 import Who from './Who'
 
 const Section = styled.div`
-  --scroll-behavior: smooth!important;
-  scroll-behavior: smooth!important;
-/* display:flex;
-justify-content:center; */
+scroll-behavior: smooth!important;
 display:flex;
 align-items:center;
 flex-direction:column;
@@ -53,31 +50,9 @@ font-size:20px;
 text-decoration: none !important;
 color: #ffffff;
 `
-const ListIt = styled.li`
-text-decoration: none;
-color: #ffffff;
 
-`
-const Icons = styled.div`
-display:flex;
-gap:20px;
-align-items:center;
-`
-const Icon = styled.img`
-width:20px;
-cursor:pointer;
-
-`
 const Button = styled.button`
-margin-right :10vh ;
-
-/* width:100px;
-background-color:#C1FF72;
-border:none;
-border-radius:5px;
-cursor:pointer;
-font-size:15px; */
---green: #1BFD9C;
+  margin-right :10vh ;
   font-size: 15px;
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
@@ -146,13 +121,14 @@ function Navbar({ boy }) {
 
         </Links>
 
-        <Icons>
 
-          <a href="#sec3"> <Button>
+
+        <a href="#sec3">
+          <Button>
             Hire
           </Button> </a>
 
-        </Icons>
+
       </Container>
     </Section>
   )

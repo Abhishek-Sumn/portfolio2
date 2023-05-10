@@ -47,23 +47,7 @@ color: #C1FF72;
 const Desc = styled.div`
 font-size: 20px;
 `
-const Img = styled.img`
-width: 800px;
-height: 600px;
-object-fit: contain;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-animation: animate 2s infinite ease alternate;
 
-@keyframes animate{
-  100%{
-    transform:translateY(20px)
-  }
-}
-`
 const Buttoncontainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -154,7 +138,7 @@ export const Hero = () => {
         </Left>
 
         <Right>
-          {/* <Img src="./img/moon.png" /> */}
+         
 
           <Up>
 
