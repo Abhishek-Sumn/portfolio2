@@ -21,6 +21,10 @@ width:1400px;
 display:flex;
 justify-content:space-between;
 scroll-snap-align:center;
+
+@media (min-width:0px) and (max-width:1000px) {
+  flex-direction: column;
+}
 `
 
 const Left = styled.div`
@@ -76,6 +80,7 @@ flex-direction: column;
 gap: 20px;
 align-content: center;
 justify-content: center;
+
 `
 const Up = styled.div`
  
@@ -112,9 +117,9 @@ export const Hero = () => {
             <br />
             <br />
 
-        
+
             <b>
-            I am currently Looking for Internship
+              I am currently Looking for Internship
             </b>
           </Desc>
 
@@ -138,7 +143,7 @@ export const Hero = () => {
         </Left>
 
         <Right>
-         
+
 
           <Up>
 
@@ -146,7 +151,7 @@ export const Hero = () => {
 
 
 
-          <Canvas camera={{ fov: 25, position: [5, 5, 5], }} >
+          <Canvas camera={{ fov: 25, position: [5, 5, 5]}} >
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />

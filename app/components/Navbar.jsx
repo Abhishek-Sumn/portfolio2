@@ -1,47 +1,39 @@
 import React from 'react'
 import styled from 'styled-components';
-import Link from 'next/link';
-import Who from './Who'
+
 
 const Section = styled.div`
 scroll-behavior: smooth!important;
-display:flex;
-align-items:center;
-flex-direction:column;
 scroll-snap-align:center;
-justify-content:space-between;
+
 `
 const Container = styled.div`
-position: sticky;
-margin: 0px;
-padding-right: 30px;
-
-padding: 0;
-width: 100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+margin-left: 5em;
+margin-right: 2em;
 
 `
 const Links = styled.div`
 display:flex;
-gap:50px;
+justify-content:space-between;
 align-items:center;
+gap:50px;
+margin-right: 1.5em;
 `
 
 const Logo = styled.img`
-margin-top:15px;
-margin-left: 10vh;
-margin-right :50vh ;
-width:150px;
+margin-top:1.5em;
+width:10em;
 
 `
 const List = styled.ul`
-margin-right:50vh;
 display:flex;
 align-items:center;
-gap:20px;
+gap:2em;
 list-style:none;
+
+@media (min-width:0px) and (max-width: 1000px) {
+  display: none;
+}
 `
 
 const ListItem = styled.li`
@@ -51,8 +43,13 @@ text-decoration: none !important;
 color: #ffffff;
 `
 
+const Hire = styled.div`
+ 
+ 
+`
 const Button = styled.button`
-  margin-right :10vh ;
+
+
   font-size: 15px;
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
@@ -100,6 +97,7 @@ function Navbar({ boy }) {
         <Links>
 
           <Logo src="./img/logg.png"></Logo>
+
           <List >
 
             <ListItem>Home</ListItem>
@@ -119,14 +117,15 @@ function Navbar({ boy }) {
 
           </List>
 
+
+
+          <Hire>
+            <a href="#sec3">
+              <Button>
+                Hire
+              </Button> </a>
+          </Hire>
         </Links>
-
-
-
-        <a href="#sec3">
-          <Button>
-            Hire
-          </Button> </a>
 
 
       </Container>
