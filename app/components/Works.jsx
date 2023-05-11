@@ -19,6 +19,10 @@ height:100vh;
 scroll-snap-align:center;
 display: flex;
 justify-content: center;
+
+@media (min-width:0px) and (max-width: 1000px) {
+      display: none;
+    }
 `
 
 const Container = styled.div`

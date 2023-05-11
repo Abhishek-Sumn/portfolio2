@@ -13,6 +13,10 @@ align-items:center;
 flex-direction:column;
 scroll-snap-align:center;
 justify-content:space-between;
+
+@media (min-width:0px) and (max-width: 1000px) {
+      display: none;
+    }
 `
 const Container = styled.div`
 margin-left:  20px;
@@ -22,9 +26,7 @@ display:flex;
 justify-content:space-between;
 scroll-snap-align:center;
 
-@media (min-width:0px) and (max-width:1000px) {
-  flex-direction: column;
-}
+
 `
 
 const Left = styled.div`

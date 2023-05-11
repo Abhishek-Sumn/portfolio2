@@ -10,6 +10,10 @@ height:100vh;
 display:flex;
 scroll-snap-align:center;
 justify-content:center;
+
+@media (min-width:0px) and (max-width: 1000px) {
+      display: none;
+    }
 `
 
 const Container = styled.div`
@@ -60,7 +64,7 @@ gap: 10px;
 export const Who = () => {
   return (
 
-    <div id ="who">
+    <div id="who">
 
       <Section>
         <Container>

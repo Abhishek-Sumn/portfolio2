@@ -9,7 +9,7 @@ import styled from "styled-components";
 import styles from "./page.module.scss"
 import { useRef } from "react";
 import Navbar from './components/Navbar'
-
+import Res from './components/Res'
 
 const Container = styled.div`
 height:100vh;
@@ -31,10 +31,15 @@ export default function Home() {
     <Container className={styles.main}>
 
       <Navbar boy={worksRef} />
+
+
+      <Res />
       <Hero />
       <Who />
       <Works ref={worksRef} />
       <Contact />
+
+
 
     </Container>
   )
