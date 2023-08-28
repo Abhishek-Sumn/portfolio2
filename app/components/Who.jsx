@@ -89,12 +89,11 @@ export const Who = () => {
 
               <Line src="./img/Line.png" />
 
-              <Subtitle>who we are.</Subtitle>
+              <Subtitle>Critical Thinking >>.</Subtitle>
             </WhatWeDo>
 
             <Desc>
-              We enjoy creating delightful,human centered
-              digital experiences
+            I enjoy Creating Beautiful Experiences.
             </Desc>
 
             <Button>see our works</Button>
