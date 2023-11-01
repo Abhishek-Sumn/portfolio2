@@ -1,0 +1,586 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e4949;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+.circle {
+  z-index: 0;
+  width: 400px;
+  height: 400px;
+  background: rgba(89, 229, 199, 0.35);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-backdrop-filter: blur(100px); /* For Safari */
+  backdrop-filter: blur(100px); /* For modern browsers */
+  filter: blur(100px); /* Fallback blur for other browsers */
+}
+
+
+.main {
+  margin: 0;
+  padding: 0 8vw;
+  width: 85vw;
+  height: 100vh !important;
+  background-color: rgba(255, 255, 255, 0.025);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1; /* Set the main content to be above the circle */
+}
+
+
+/*Hero*/
+.main .hero {
+  padding: 7vh 0 7vh 5em;
+  width: 50%;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro h1 {
+  font-size: 48px;
+  color: #e2e8f0;
+  margin-bottom: 0px;
+}
+
+.intro h4 {
+  margin-bottom: 40px;
+  color: #e2e8f0;
+  opacity: 0.8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(94, 234, 212, 0.85);
+}
+
+.intro p {
+  max-width: 70%;
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+/*menu*/
+.menu {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+    color: #e2e8f0;
+    opacity: 0.8;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.menu a:hover {
+  padding-left: 0.5em;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: rgba(94, 234, 212, 0.85);
+}
+.resume-link a {
+  color: #e2e8f0;
+  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.65);
+font-weight: 600;
+letter-spacing: 1px;
+text-decoration: none;
+transition: 0.3s all;
+}
+
+.resume-link a:hover {
+padding-left: 0em;
+color: rgba(94, 234, 212, 0.85);
+}
+
+/*social*/
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+
+.social a img {
+  filter: invert();
+  opacity: 0.3;
+  width: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social a img:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.social a .i,
+.social a .g {
+  width: 34px;
+}
+
+/*Content*/
+.content {
+  width: 50%;
+  height: calc(100vh - 8vh);
+  /* Adjust the height based on the sum of the padding values. */
+  padding: 7vh 5em 1vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  /* Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  scroll-behavior: smooth;
+}
+
+.content .end {
+  padding: 5em 1em 0;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.content .end a {
+  color: rgba(94, 234, 212, 0.85);
+}
+
+.content::-webkit-scrollbar {
+  /* Chrome, Safari, and Opera */
+  display: none;
+}
+
+/*about*/
+.content .about {
+  padding-top: 5vh;
+  width: 90%;
+}
+
+.content .about p {
+  font-size: 18px;
+  opacity: 0.6;
+  color: #d4eeee;
+}
+
+.content .about p b {
+  color: rgba(94, 234, 212, 1);
+}
+
+/*experience*/
+.journey {
+  padding: 5em 0 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.learning-path .title{
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0;
+}
+.learning-path .title2{
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2em;
+}
+.lesson {
+  margin: 1.5em 0;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  width: 90%;
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 2px;
+  padding: 1em;
+  height: auto;
+  transition: all 0.35s ease;
+}
+
+.lesson:hover {
+  background-color: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(20px);
+  border-color: rgba(94, 234, 212, 0.5);
+  border-style: solid;
+  border-width: 2px;
+}
+
+
+.lesson h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.lesson-intro {
+  align-self: flex-start;
+  color: #fff;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 30%;
+}
+
+.lesson-details {
+  padding: 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.lesson-details h4 {
+  padding: 0;
+  margin: 0 0 0.15em;
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.lesson:hover .lesson-details h4 {
+  color: white;
+  /* Or any other color you prefer */
+}
+
+.lesson-details h6 {
+  opacity: 0.6;
+}
+
+.lesson-details p {
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-button {
+  background-color: rgba(94, 234, 212, 0.1);
+  backdrop-filter: blur(20px);
+  display: inline-block;
+  padding: 2px 12px;
+  margin: 5px 0;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #5eead4;
+  text-align: center;
+  font-size: 13px;
+}
+
+.skill-button:hover {
+  color: white;
+}
+
+/*Resume*/
+.resume {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: rgba(94, 234, 212, 0.7);
+  width: 140px;
+  transition: 0.3s all ease-in-out;
+}
+
+.github {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 8px;
+  color: rgba(94, 234, 212, 0.7);
+  width: 140px;
+  transition: 0.3s all ease-in-out;
+}
+
+.resume:hover {
+  color: rgba(94, 234, 212, 0.85);
+}
+
+.github:hover {
+  color: rgba(94, 234, 212, 0.85);
+}
+
+.resume::before,
+.github::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(94, 234, 212, 0.85);
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.resume:hover::before,
+.github:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/*Projects*/
+
+.project-details {
+  padding: 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.project-details h4 {
+  padding: 0;
+  margin: 0 0 0.15em;
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.project-details h6 {
+  opacity: 0.6;
+}
+
+.project-details p {
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.icon-intro {
+  justify-content: center;
+  align-self: flex-start;
+  color: #fff;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 30%;
+}
+
+.icon-intro img {
+  width: 60%;
+  opacity: 0.6;
+}
+
+.icon-intro .blog {
+  width: 80%;
+  margin-left: -10px;
+}
+
+.link {
+  padding-left: 0.3em;
+  padding-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.link a {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.link a:hover {
+  color: rgba(94, 234, 212, 0.85);
+}
+
+.lesson:hover .project-details h4 {
+  color: rgba(94, 234, 212, 0.85);
+}
+
+/*responsive*/
+
+
+@media (max-width: 1200px) {
+  .main {
+    padding: 0 2vw;
+    width: 96vw;
+  }
+  .intro p {
+    max-width: 100%;
+    font-size: 16px;
+    color: #94a3b8;
+  }
+
+  .main .hero {
+    padding: 7vh 0 7vh 3em;
+    width: 45%;
+    height: 86vh;
+  }
+
+  .content {
+    width: 55%;
+    height: calc(100vh - 15vh);
+    padding: 6vh 0em 3vh 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    padding: 0 1vw;
+    width: 98vw;
+  }
+
+  .main .hero {
+    padding: 7vh 0 7vh 2em;
+    width: 45%;
+    height: 86vh;
+  }
+
+  .content {
+    width: 55%;
+    height: calc(100vh - 15vh);
+    padding: 3vh 0em 2vh 0;
+  }
+}
+
+@media (max-width: 925px) {
+  #root {
+    height: 100%;
+  }
+
+  .main {
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+
+  /*Hero*/
+  .main .hero {
+    padding: 7vh 0;
+    width: 85% !important;
+    height: 85% !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu{
+    display: none;
+  }
+  
+  .content {
+    align-items: center;
+    width: 80% !important;
+    height: 100% !important;
+    padding: 3vh 0 0;
+    overflow-y: unset;
+  }
+  .content .about {
+    padding-top: 5vh;
+    width: 100% ;
+  }
+  .content .end {
+    padding: 5em 1em;
+  }
+
+  .lesson {
+    background-color: rgba(255, 255, 255, 0.025);
+    backdrop-filter: none;
+    border-color: rgba(94, 234, 212, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    border-style: solid;
+    border-width: 2px;
+  }
+  .lesson-details h4 {
+    color: white;
+    /* Or any other color you prefer */
+  }
+  .project-details h4 {
+    color: white;
+  }
+  .lesson:hover {
+    background-color: rgba(255, 255, 255, 0.025);
+    backdrop-filter: none;
+    border-color: rgba(94, 234, 212, 0.5);
+    border-style: solid;
+    border-width: 2px;
+  }
+  .lesson:hover .lesson-details h4 {
+    color: white;
+  }
+  .lesson:hover .project-details h4 {
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
+  #root {
+    height: 100%;
+  }
+
+  .main {
+    padding: 0;
+    height: 100% !important;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  .resume{
+    width: 150px;
+  }
+  .github{
+    width: 150px;
+  }
+  .lesson{
+    flex-direction: column;
+  }
+  .lesson-intro{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1em;
+  }
+  .icon-intro{
+    padding: 0;
+    padding-bottom: 1em;
+  }
+  /*Hero*/
+  .main .hero {
+    padding: 7vh 0;
+    width: 90% !important;
+    height: auto !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu{
+    display: none;
+  }
+  .content {
+    align-items: center;
+    width: 90% !important;
+    height: 100% !important;
+    /* Adjust the height based on the sum of the padding values. */
+    padding: 3vh 0 0;
+    overflow-y: unset;
+  }
+  .content .about {
+    padding-top: 5vh;
+    width: 100% ;
+  }
+  .lesson {
+    background-color: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(20px);
+    border-color: rgba(94, 234, 212, 0.5);
+    border-style: solid;
+    border-width: 2px;
+  }
+}
