@@ -1,10 +1,7 @@
 import blog from "./assets/blog.png";
 import task from "./assets/task.svg";
-import eye from "./assets/eye.png";
-import a from "./assets/a.svg";
-import music from "./assets/music.png";
-import script from "./assets/script.png";
-import update from "./assets/update.png";
+import Image from 'next/image';
+
 
 export default function Content() {
   return (
@@ -72,7 +69,16 @@ export default function Content() {
               <p className="title2">Projects</p>
               <div className="lesson">
                 <div className="icon-intro">
-                  <img className="blog" src={blog} />
+                  <div className="blo">
+                  <Image
+                  src={blog} 
+                  width="60"
+                  height="80"
+                  
+                  />
+                  </div>
+                  
+
                 </div>
                 <div className="project-details">
                   <h4>MovieFinder</h4>
@@ -100,7 +106,11 @@ export default function Content() {
 
               <div className="lesson">
                 <div className="icon-intro">
-                  <img src={task} />
+                <Image 
+                  src={task} 
+                  width={50}
+                  height={80}
+                  />
                 </div>
                 <div className="project-details">
                   <h4>Budget Calculator</h4>

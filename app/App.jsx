@@ -1,3 +1,4 @@
+'use client'
 import { useEffect } from 'react';
 import './App.css';
 import Hero from './Hero.jsx';

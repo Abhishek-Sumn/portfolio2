@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #1e4949;
+  background-color: #0e2b42;
 }
 
 #root {
@@ -156,6 +156,7 @@ color: rgba(94, 234, 212, 0.85);
   padding: 5em 1em 0;
   font-size: 16px;
   opacity: 0.85;
+  color: white;
 }
 
 .content .end a {
@@ -199,6 +200,8 @@ color: rgba(94, 234, 212, 0.85);
   margin-top: 2em;
 }
 .lesson {
+  color: white;
+
   margin: 1.5em 0;
   align-items: center;
   border-radius: 10px;
@@ -223,6 +226,7 @@ color: rgba(94, 234, 212, 0.85);
 
 
 .lesson h6 {
+  color: white;
   opacity: 0.6;
   margin: 0;
   letter-spacing: 1px;
@@ -379,10 +383,13 @@ color: rgba(94, 234, 212, 0.85);
 }
 
 .icon-intro .blog {
-  width: 80%;
+  width: 50%;
   margin-left: -10px;
 }
-
+.blo{
+  
+  margin-left: -10px;
+}
 .link {
   padding-left: 0.3em;
   padding-bottom: 0.5em;
@@ -477,6 +484,7 @@ color: rgba(94, 234, 212, 0.85);
   }
   
   .content {
+    color: white;
     align-items: center;
     width: 80% !important;
     height: 100% !important;
@@ -488,6 +496,7 @@ color: rgba(94, 234, 212, 0.85);
     width: 100% ;
   }
   .content .end {
+    
     padding: 5em 1em;
   }
 

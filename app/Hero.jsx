@@ -1,7 +1,7 @@
 import githubLogo from './assets/github.png';
 import linkedinLogo from './assets/ln.png';
 import { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 const Hero = () => {
   const [heading, setHeading] = useState('Engineer');
 
@@ -39,14 +39,25 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="g" src={githubLogo} alt="github Link" />
+            <Image
+              src={linkedinLogo}
+                width={55}
+                height={33}
+                alt="Linkedin Link"
+             />
           </a>
           <a
             href="https://www.linkedin.com/in/abhishek-suman-0021411b7/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="l" src={linkedinLogo} alt="Linkedin Link" />
+            {/* <img className="l" src={linkedinLogo} alt="Linkedin Link" /> */}
+            <Image
+              src={githubLogo}
+                width={55}
+                height={33}
+                alt="Github Link"
+             />
           </a>
           <a
             href="https://www.linkedin.com/in/abhishek-suman-0021411b7/"
