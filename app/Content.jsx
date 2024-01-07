@@ -1,7 +1,7 @@
+'use client'
 import blog from "./assets/blog.png";
 import task from "./assets/task.svg";
-import Image from 'next/image';
-
+import Image from "next/image";
 
 export default function Content() {
   return (
@@ -38,8 +38,10 @@ export default function Content() {
                 <h4>Inxee Systems Private Limited</h4>
                 <h6>Lead Web Application developer</h6>
                 <p>
-                  As a web app developer intern, i developed inventory management system for the company which is utilised for managing inventory operations such as 
-                  adding new product, updating, deleting and so on.
+                  As a web app developer intern, i developed inventory
+                  management system for the company which is utilised for
+                  managing inventory operations such as adding new product,
+                  updating, deleting and so on.
                 </p>
                 <div className="skills-container">
                   <a className="skill-button">Mongo DB</a>
@@ -52,7 +54,6 @@ export default function Content() {
                 </div>
               </div>
             </div>
-
           </div>
           <a
             target="_blank"
@@ -67,60 +68,90 @@ export default function Content() {
           <div id="experience" className="journey">
             <div className="learning-path">
               <p className="title2">Projects</p>
+
               <div className="lesson">
                 <div className="icon-intro">
                   <div className="blo">
-                  <Image
-                  src={blog} 
-                  width="60"
-                  height="80"
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-swiggy-1613371-1369418.png" alt="" />
                   
-                  />
                   </div>
-                  
-
                 </div>
+
                 <div className="project-details">
-                  <h4>MovieFinder</h4>
-                  <h6>Made on React JS</h6>
+                  <h4>Fooder</h4>
+                  <h6>Made on React JS and Node JS</h6>
                   <p>
-                    Utilizing OMDB Api to fetch Movie details.You can search and get infos about any movie or web series.
+                    A food ordering web application powered by Swiggy's API and
+                    Backend made on express.js supporting Swiggy's Data hosted
+                    on Azure Cloud.
                   </p>
                   <div className="link">
-                    <a href="https://moviefinder-two.vercel.app/">Live↗</a>
-                    <a href="https://github.com/Abhishek-Sumn/moviefinder">
+                    <a href="https://fooder-abhi.vercel.app/" target="_blank">Live↗</a>
+                    <a href="https://github.com/Abhishek-Sumn/myapp" target="_blank">
                       Github↗
                     </a>
                   </div>
                   <div className="skills-container">
-                  <a className="skill-button">React JS</a>
-                  <a className="skill-button">API</a>
+                    <a className="skill-button">React JS</a>
+                    <a className="skill-button">Redux</a>
+                    <a className="skill-button">Tailwind CSS</a>
+                    <a className="skill-button">Shimmer UI</a>
+                    <a className="skill-button">API</a>
                     <a className="skill-button">Github</a>
                     <a className="skill-button">HTML</a>
                     <a className="skill-button">CSS</a>
                     <a className="skill-button">JS</a>
-                    
                   </div>
                 </div>
               </div>
 
               <div className="lesson">
                 <div className="icon-intro">
-                <Image 
-                  src={task} 
-                  width={50}
-                  height={80}
-                  />
+                  <div className="blo">
+                    <Image src={blog} width="60" height="80" />
+                  </div>
+                </div>
+
+                <div className="project-details">
+                  <h4>MovieFinder</h4>
+                  <h6>Made on React JS</h6>
+                  <p>
+                    Utilizing OMDB Api to fetch Movie details.You can search and
+                    get infos about any movie or web series.
+                  </p>
+                  <div className="link">
+                    <a href="https://moviefinder-two.vercel.app/" target="_blank" >Live↗</a>
+                    <a href="https://github.com/Abhishek-Sumn/moviefinder" target="_blank">
+                      Github↗
+                    </a>
+                  </div>
+                  <div className="skills-container">
+                    <a className="skill-button">React JS</a>
+                    <a className="skill-button">API</a>
+                    <a className="skill-button">Github</a>
+                    <a className="skill-button">HTML</a>
+                    <a className="skill-button">CSS</a>
+                    <a className="skill-button">JS</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lesson">
+                <div className="icon-intro">
+                  <Image src={task} width={50} height={80} />
                 </div>
                 <div className="project-details">
                   <h4>Budget Calculator</h4>
                   <h6>Smooth UI</h6>
                   <p>
-                    This app is made to easily calculate expense with eye soothing UI
+                    This app is made to easily calculate expense with eye
+                    soothing UI
                   </p>
                   <div className="link">
-                    <a href="https://abhishek-sumn.github.io/budget_calculator/">Live↗</a>
-                    <a href="https://github.com/Abhishek-Sumn/budget_calculator">
+                    <a href="https://abhishek-sumn.github.io/budget_calculator/" target="_blank">
+                      Live↗
+                    </a>
+                    <a href="https://github.com/Abhishek-Sumn/budget_calculator" target="_blank">
                       Github↗
                     </a>
                   </div>
@@ -134,7 +165,6 @@ export default function Content() {
                 </div>
               </div>
 
-              
               <a href="https://github.com/Abhishek-Sumn" className="github">
                 Visit my github profile ›
               </a>
