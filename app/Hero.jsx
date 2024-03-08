@@ -2,6 +2,7 @@ import githubLogo from './assets/github.png';
 import linkedinLogo from './assets/ln.png';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from "next/link"
 const Hero = () => {
   const [heading, setHeading] = useState('Engineer');
 
@@ -32,6 +33,7 @@ const Hero = () => {
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <Link href="/blogs">Blog</Link>
         </div>
         <div className="social">
           <a
