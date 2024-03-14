@@ -33,7 +33,7 @@ const Hero = () => {
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <Link href="/blogs">Blog</Link>
+      
         </div>
         <div className="social">
           <a

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import blog from "./assets/blog.png";
 import task from "./assets/task.svg";
 import Image from "next/image";
@@ -72,8 +72,52 @@ export default function Content() {
               <div className="lesson">
                 <div className="icon-intro">
                   <div className="blo">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-swiggy-1613371-1369418.png" alt="" />
-                  
+                    <img
+                      src="https://play-lh.googleusercontent.com/Ji8f4i_ga-vRkl8MWlEDG4U61QaM0ZISDdLiCeGdbr28K0eUKZ876zs0_QuQzyNtbsBU=w240-h480-rw"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div className="project-details">
+                  <h4>Multi-player Scribbl</h4>
+                  <h6>Made on React JS with Socket.IO</h6>
+                  <p>
+                    -Simple representation of multiplayer scenario -Utilised
+                    Socket.io javascript library to established bi-directional
+                    data flow from client to server and then server to client
+                    <div>-Optimized express server hosted on Azure for low latency</div>
+                  </p>
+                  <div className="link">
+                    <a href="https://socketscribbl.vercel.app/" target="_blank">
+                      Live↗
+                    </a>
+                    <a
+                      href="https://github.com/Abhishek-Sumn/socketscribbl"
+                      target="_blank"
+                    >
+                      Github↗
+                    </a>
+                  </div>
+                  <div className="skills-container">
+                    <a className="skill-button">React JS</a>
+                    <a className="skill-button">Socket.Io</a>
+                    <a className="skill-button">Tailwind CSS</a>
+                    <a className="skill-button">API</a>
+                    <a className="skill-button">HTML</a>
+                    <a className="skill-button">CSS</a>
+                    <a className="skill-button">JS</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lesson">
+                <div className="icon-intro">
+                  <div className="blo">
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/free-swiggy-1613371-1369418.png"
+                      alt=""
+                    />
                   </div>
                 </div>
 
@@ -86,8 +130,13 @@ export default function Content() {
                     on Azure Cloud.
                   </p>
                   <div className="link">
-                    <a href="https://fooder-abhi.vercel.app/" target="_blank">Live↗</a>
-                    <a href="https://github.com/Abhishek-Sumn/myapp" target="_blank">
+                    <a href="https://fooder-abhi.vercel.app/" target="_blank">
+                      Live↗
+                    </a>
+                    <a
+                      href="https://github.com/Abhishek-Sumn/myapp"
+                      target="_blank"
+                    >
                       Github↗
                     </a>
                   </div>
@@ -120,8 +169,16 @@ export default function Content() {
                     get infos about any movie or web series.
                   </p>
                   <div className="link">
-                    <a href="https://moviefinder-two.vercel.app/" target="_blank" >Live↗</a>
-                    <a href="https://github.com/Abhishek-Sumn/moviefinder" target="_blank">
+                    <a
+                      href="https://moviefinder-two.vercel.app/"
+                      target="_blank"
+                    >
+                      Live↗
+                    </a>
+                    <a
+                      href="https://github.com/Abhishek-Sumn/moviefinder"
+                      target="_blank"
+                    >
                       Github↗
                     </a>
                   </div>
@@ -148,10 +205,16 @@ export default function Content() {
                     soothing UI
                   </p>
                   <div className="link">
-                    <a href="https://abhishek-sumn.github.io/budget_calculator/" target="_blank">
+                    <a
+                      href="https://abhishek-sumn.github.io/budget_calculator/"
+                      target="_blank"
+                    >
                       Live↗
                     </a>
-                    <a href="https://github.com/Abhishek-Sumn/budget_calculator" target="_blank">
+                    <a
+                      href="https://github.com/Abhishek-Sumn/budget_calculator"
+                      target="_blank"
+                    >
                       Github↗
                     </a>
                   </div>
