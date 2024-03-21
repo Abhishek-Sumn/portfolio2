@@ -57,7 +57,7 @@ export default function Content() {
           </div>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1jQmzs-GRSMmyikgsswN6JXydCwowNdbm/view?usp=sharing"
+            href="https://drive.google.com/file/d/1P2On7ZxyR_qgx--qo1txI-S1vTpMVJjn/view?usp=sharing"
             className="resume"
           >
             View Full Résumé ›
