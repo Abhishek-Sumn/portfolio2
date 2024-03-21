@@ -72,7 +72,7 @@ const Hero = () => {
         </div>
 
         <div className="resume-link">
-          <a target='_blank' href="https://drive.google.com/file/d/1jQmzs-GRSMmyikgsswN6JXydCwowNdbm/view?usp=sharing">My Resume</a>
+          <a target='_blank' href="https://drive.google.com/file/d/1P2On7ZxyR_qgx--qo1txI-S1vTpMVJjn/view?usp=sharing">My Resume</a>
           </div>
       </div>
     </>
